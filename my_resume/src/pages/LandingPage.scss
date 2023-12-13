@@ -1,0 +1,78 @@
+@import '../style';
+
+.TopLeftBorder {
+  height: 30%;
+  width: 20%;
+  margin-left: 5em;
+  position: absolute;
+  z-index: -1;
+  border-left: double 1em transparent;
+  border-top: double 1em transparent;
+  border-radius: 20px;
+  background-image: linear-gradient($backgroundColor, $backgroundColor),
+    linear-gradient(to bottom right, $primaryColor, $backgroundColor);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.TopRightContainer {
+  position: absolute;
+  right: 5em;
+  top: 5em;
+}
+
+.BotRightBorder {
+  height: 30%;
+  width: 20%;
+  position: absolute;
+  right: 5em;
+  bottom: 0px;
+  z-index: -1;
+  border-bottom: double 1em transparent;
+  border-right: double 1em transparent;
+  border-radius: 20px;
+  background-image: linear-gradient($backgroundColor, $backgroundColor),
+    linear-gradient(to top left, $primaryColor, $backgroundColor);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.LeftContainer {
+  height: 33%;
+  width: 70%;
+  margin: 2em;
+  padding: 2em;
+  border-left-style: solid;
+  border-width: 5px;
+  border-image: linear-gradient(to top, $secondaryColor, $backgroundColor) 1
+    100%;
+}
+
+.RightContainer {
+  height: 40%;
+  width: 30%;
+  margin: 2em;
+}
+
+.MainContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.Title {
+  font-family: $headerFont;
+  font-size: 4em;
+}
+
+.Subheading {
+  font-family: $headerFont;
+  font-size: 2em;
+}
+
+.NavButton {
+  background-color: $backgroundColor;
+  border: none;
+}
